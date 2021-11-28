@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "sugar-rush",
+  "version": "${version}",
+
+  "name": "Sugar Rush",
+  "description": "A minecraft mod containing sweet content",
+  "authors": [],
+  "contact": {
+    "homepage": "https://github.com/mini-mammoth/sugar-rush",
+    "repo": "git@github.com:mini-mammoth/sugar-rush.git"
+  },
+
+  "license": "MIT",
+  "icon": "assets/sugar-rush/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.minimammoth.sugarrush.SugarRush"
+    ]
+  },
+  "mixins": [
+    "sugar-rush.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": "1.18-rc.3",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
